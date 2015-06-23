@@ -1,0 +1,25 @@
+ <!DOCTYPE html>
+ <html>
+   <head>
+     <title>Bloc Jams</title>
+     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset/cssreset-min.css">
+     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+   </head>
+   <body>
+     <div class='nav-bar'> <!-- Nav Bar -->
+       <img src="/images/blocjams.png">
+     </div>
+
+      <div class='album-container'>
+        <div class='album-header-container'>
+          <div>
+            <img src="/images/album-placeholder.png" />
+          </div>
+
+          <div class='album-information'>
+            <h3> The Colors </h3>
+            <h4> Pablo Picasso </h4>
+ 
+   </body>
+ </html>
