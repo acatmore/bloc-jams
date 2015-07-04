@@ -109,26 +109,22 @@ body.landing {
  .album-header-information h3 {
    font-size: 48px;
    font-weight: 300;
-   color: white;
  }
  
  .album-header-information h4 {
    font-size: 24px;
    font-weight: 700;
-   color: white;
  }
  
  .album-header-information h5 {
    font-size: 16px;
    font-weight: 500;
-   color: white;
  }
  
  // This styles our Song Listing
  .table.album-song-listing {
    // Override the font for the entire table.
    font-weight: 300;
-   color: white;
  }
  
    // Override the defaults that Bootstrap sets.

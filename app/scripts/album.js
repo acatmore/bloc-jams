@@ -62,9 +62,10 @@
    // Update the Song List
    var $songList = $(".album-song-listing");
    $songList.empty();
+   console.log($songList);
    var songs = album.songs;
    for (var i = 0; i < songs.length; i++) {
-    console.log("new song")
+    console.log("new song");
       var songData = songs[i];
       var $newRow = createSongRow(i + 1, songData.name, songData.length);
       $songList.append($newRow);
