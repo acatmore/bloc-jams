@@ -6,11 +6,13 @@ body {
   color: white;
   min-height: 100%; 
   background: -webkit-radial-gradient(  #2b1339, #380c77);
-  background: radial-gradient(   #2b1339, #380c77);}
+  background: radial-gradient(   #2b1339, #380c77);
+  padding-bottom: 150px;
+}
 
 body.landing {
   background: #5b5579; 
-  color: white;
+  padding-bottom: 0;
 }
 
 .hero-content {
@@ -91,7 +93,40 @@ body.landing {
    margin-top: 55px;
    margin-bottom: 40px;
  }
+  .album-song-button {
+   text-align: center;
+   font-size: 14px;
+   background-color: white;
+   color: #d2287b;
+   border-radius: 50% 50%;
+   display: inline-block;
+   width: 28px;
+   height: 28px;
+ }
  
+ .album-song-button:hover {
+   cursor: pointer;
+   color: white;
+   background-color: #d2287b;
+ }
+ 
+ .album-song-button i {
+   line-height: 28px;
+ }
+ 
+ .album-song-button .fa-play {
+   padding-left: 5px;
+ }
+ 
+ .album-song-listing td {
+   vertical-align: middle;
+ }
+ 
+ td.song-number {
+   padding: 0;
+   height: 70px;
+   text-align: center;
+ }
  // This styles the right side of our Album Header
  .album-header-information {
    // Pushes the album information down and makes sure there's sufficient space at the bottom of the page
@@ -109,27 +144,188 @@ body.landing {
  .album-header-information h3 {
    font-size: 48px;
    font-weight: 300;
+   color: white;
  }
  
  .album-header-information h4 {
    font-size: 24px;
    font-weight: 700;
+   color: white;
  }
  
  .album-header-information h5 {
    font-size: 16px;
    font-weight: 500;
+   color: white;
  }
  
  // This styles our Song Listing
  .table.album-song-listing {
    // Override the font for the entire table.
    font-weight: 300;
+   color: white;
  }
  
    // Override the defaults that Bootstrap sets.
  .table.album-song-listing  td {
    padding: 20px;
    border-top: 1px solid rgba(255, 255, 255, .4);
+ }
+ .player-bar {
+   position: fixed;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 150px;
+   background: rgba(255, 255, 255, 0.3);
+   z-index: 100;
+ }
+ 
+ /*.player-bar a {
+  color: purple;
+  opacity: 0.5;
+  transition:color 5s, opacity 5s;
+ }*/
+ 
+ .player-bar a, .player-bar a:hover {
+   color: white;
+   cursor: pointer;
+   text-decoration: none;
+ }
+ 
+ 
+ .player-bar .container {
+   display: table;
+   padding: 0;
+   min-height: 100%;
+ }
+ 
+ .player-bar-control-group {
+   display: table-cell;
+   vertical-align: middle;
+ }
+ 
+ .player-bar .left-controls {
+   width: 25%;
+   text-align: left;
+ }
+ 
+ .player-bar .right-controls {
+   width: 25%;
+   text-align: right;
+ }
+ .player-bar .play-controls a {
+   font-size: 20px;
+   vertical-align: middle;
+ }
+ 
+ .player-bar .play-controls .previous {
+   margin-right: 65px;
+ }
+ 
+ .player-bar .play-controls .play-pause {
+   margin-right: 60px;
+   font-size: 30px
+ }
+ 
+ .player-bar .currently-playing {
+   width: 50%;
+   text-align: center;
+   position: relative;
+ }
+ 
+ .player-bar .currently-playing .song-name,
+ .player-bar .currently-playing .artist-name
+ {
+   text-align: center;
+   font-size: 12px;
+   margin: 0;
+   position: absolute;
+   width: 100%;
+   font-weight: 300;
+ }
+ 
+ .player-bar .currently-playing .song-name {
+   top: 20px;
+ }
+ 
+ .player-bar .currently-playing .artist-name {
+   bottom: 20px;
+ }
+ 
+ .seek-control {
+   position: relative;
+ }
+ 
+ .seek-control .current-time {
+   position: absolute;
+   top: 10px;
+ }
+ 
+ .seek-control .total-time {
+   position: absolute;
+   right: 0;
+   top: 10px;
+ }
+ 
+ .seek-bar {
+   height: 5px;
+   background: rgba(255, 255, 255, 0.3);
+   border-radius: 2px;
+   position: relative;
+   cursor: pointer;
+ }
+ 
+ .seek-bar .fill {
+   background: white;
+   width: 36%;
+   height: 5px;
+   border-radius: 2px;
+ }
+ 
+ .seek-bar .thumb {
+   position: absolute;
+   height: 10px;
+   width: 10px;
+   background: white;
+   left: 36%;
+   margin-left: -5px;
+   top: 50%;
+   margin-top: -5px;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: all 100ms ease-in-out;
+ }
+ 
+ .seek-bar:hover .thumb {
+   width: 20px;
+   height: 20px;
+   margin-top: -10px;
+   margin-left: -10px;
+ }
+ 
+ .player-bar .queue-toggle {
+   display: inline-block;
+   margin-left: 75px;
+ }
+ 
+ .player-bar .queue-toggle i {
+   font-size: 20px;
+ }
+ 
+ .player-bar .volume {
+   display: inline-block;
+ }
+ 
+ .player-bar .volume i {
+   width: 40px;
+   font-size: 20px;
+   display: inline-block;
+   vertical-align: middle;
+ }
+ .player-bar .volume .seek-bar {
+   display: inline-block;
+   width: 100px;
+   vertical-align: middle;
  }
 /*# sourceMappingURL=app.css.map*/
