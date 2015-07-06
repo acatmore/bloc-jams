@@ -1,12 +1,11 @@
  .album-collection-container {
-    margin-top: 30px;
-    margin-bottom: 20px;
-
+/*    margin-top: 30px;
+    margin-bottom: 20px;*/
     .caption {
       margin-top: 10px;
 
       p {
-        font-size: 16px;
+          font-size: 16px;
         font-weight: 300;
         color: rgba(255, 255, 255, 0.6);
 
@@ -23,10 +22,10 @@
     img {
     max-width: 100%;
 
-      container {
+      .container {
         position: relative;
 
-        overlay {
+        .overlay {
           position: absolute;
           top: 0px;
           left: 0px;
@@ -35,13 +34,13 @@
           background-color: rgba(0, 0, 0, 0.4);
           z-index: 10;
 
-          content {
+          .content {
             position: absolute;
             bottom: 20px;
             width: 100%;
             text-align: center;
           }
-          button {
+          .button {
             font-size: 20px;
             background-color: white;
             color: #d2287b;
@@ -50,7 +49,7 @@
             width: 42px;
             height: 42px;
 
-            button:hover {
+            button, button:hover {
               cursor: pointer;
               color: white;
               background-color: #d2297b;

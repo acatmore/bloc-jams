@@ -1,4 +1,85 @@
- .album-header-container {
+.album-header-container {
+    margin-top: 55px;
+    margin-bottom: 40px;
+  }
+ 
+  // This styles the right side of our Album Header
+  .album-header-information {
+    // Pushes the album information down and makes sure there's sufficient space at the bottom of the page
+    margin-top: 45px;
+    margin-bottom: 20px;
+  }
+ 
+  .album-header-information h3, .album-header-information h4, .album-header-information h5 {
+    // Modifying the line height allows us to increase the spacing above and
+    // below the content. Another way of achieving the same effect would be to
+    // set a margin-top and margin-bottom for each of these classes
+    line-height: 150%;
+  }
+ 
+  .album-header-information h3 {
+    font-size: 48px;
+    font-weight: 300;
+  }
+ 
+  .album-header-information h4 {
+    font-size: 24px;
+    font-weight: 700;
+  }
+ 
+  .album-header-information h5 {
+    font-size: 16px;
+    font-weight: 500;
+  }
+ 
+  // This styles our Song Listing
+  .table.album-song-listing {
+    // Override the font for the entire table.
+    font-weight: 300;
+  }
+ 
+  // Override the defaults that Bootstrap sets.
+  .table.album-song-listing  td {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, .4);
+  }
+ 
+  .album-song-button {
+    text-align: center;
+    font-size: 14px;
+    background-color: white;
+    color: #d2287b;
+    border-radius: 50% 50%;
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+  }
+ 
+  .album-song-button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #d2287b;
+  }
+ 
+  .album-song-button i {
+    line-height: 28px;
+  }
+ 
+  .album-song-button .fa-play {
+    padding-left: 5px;
+  }
+ 
+  .album-song-listing td {
+    vertical-align: center;
+  }
+ 
+  td.song-number {
+    padding: 0;
+    height: 70px;
+    text-align: center;
+  }
+
+/* .album-header-container {
     margin-top: 55px;
     margin-bottom: 40px;
   }
@@ -29,11 +110,10 @@
   .table.album-song-listing {
     // Override the font for the entire table.
     font-weight: 300;
-
-    td {
+  }
+   .table.album-song-listing td {
       padding: 20px;
       border-top: 1px solid rgba(255, 255, 255, .4);
-    }
   }
  
   .album-song-button {
@@ -45,28 +125,26 @@
     display: inline-block;
     width: 28px;
     height: 28px;
- 
-    button:hover {
+  }
+   .album-song-button:hover {
       cursor: pointer;
       color: white;
       background-color: #d2287b;
-    }
+  }
  
-    i {
+  .album-song-button i {
     line-height: 28px;
-    }
+  }
  
-    .fa-play {
+  .album-song-button .fa-play {
       padding-left: 5px;
-    }
   }
  
   .album-song-listing td {
     vertical-align: center;
-    
-    song-number {
+  } 
+    td.song-number {
       padding: 0;
       height: 70px;
       text-align: center;
-    }
-  }
+  }*/

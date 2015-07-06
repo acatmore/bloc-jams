@@ -7,7 +7,7 @@
    var onHoverAction = function(event) {
      console.log('Hover action triggered.');
      $(this).animate({'margin-top': '10px'});
-     $(this).animate({'font-size': '200px'});
+     $(this).animate({'font-size': '100px'});
    };
  
    var offHoverAction = function(event) {
