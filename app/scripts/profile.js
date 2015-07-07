@@ -1,4 +1,4 @@
-var tabsContainer = ".user-profi;e-tabs-container"
+var tabsContainer = ".user-profile-tabs-container"
 var selectTabHandler = function(event) {
   $tab = $(this);
   $(tabsContainer + "li").removeClass('active');

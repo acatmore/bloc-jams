@@ -1,9 +1,9 @@
-  @import "landing";
-  @import "album";
-  @import "collection";
-  @import "player_bar";
-  @import "buttons";
-  @import "profile";
+@import "_landing";
+@import "_album";
+@import "_collection";
+@import "_player_bar";
+@import "_buttons";
+@import "_profile";
 
 html {
   height: 100%;
