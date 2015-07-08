@@ -323,6 +323,15 @@ body.landing {
 body.landing .navbar {
   margin-bottom: 0; }
 
+.navbar-nav a {
+  line-height: 45px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1.2; }
+  .navbar-nav a:hover {
+    color: rgba(123, 70, 163, 0.9); }
+
 .player-header-nav {
   background-color: rgba(123, 70, 163, 0.9); }
 

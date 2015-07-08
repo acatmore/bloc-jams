@@ -2,11 +2,13 @@
 <html ng-app="BlocJams">
   <head>
     <title> Bloc Jams</title>
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset-min.css">
 
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset-min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'> -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
      <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
@@ -17,45 +19,16 @@
      </script>
   </head>
   <body >
-    <div class ='nav-bar'>
-      <img src="/images/blocjams.png">
+    <div class="container">
+      <div class='navbar-header'> <!-- Nav Bar -->
+        <a ui-sref='landing' class='logo navbar-left'>
+          <img src="/images/blocjams.png">
+        </a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a ui-sref='collection'>Library</a></li>
+      </ul>
     </div>
-
-    <div class='hero-content'>
-      <div class='container'>
-        <h1> Bloc Jams </h1>
-        <h3 ng-click="subTextClicked()"> {{ subText }} </h3>
-      </div>
-    </div>
-
-    <div class='selling-points container'> <!-- selling points -->
-      <div class='row'>
-        <div class='point col-md-4'>
-          <h5> Choose your music </h5>
-          <p> The world is full of music; why should you have to listen to music that someone else chose? </p>
-        </div>
-      <div class='point col-md-4'>
-        <h5> Unlimited, streaming, ad-free </h5>
-        <p> No arbitrary limits. No distractions. </p>
-      </div>
-      <div class='point col-md-4'>
-        <h5> Mobile enabled </h5>
-        <p> Listen to your music on the go. This streaming service is available on all mobile platforms. </p>
-      </div>
-      </div>
-    </div>
-  <div class='nav-bar'>
-  </div>
-
-  <div class='hero-content'>
-  </div>  
-
-     <div class="landing-album-list container">
-       <div class="row">
-         <div class="col-md-4" ng-repeat="albumURL in albumURLs">
-           <img ng-src="{{albumURL}}">
-         </div>
-       </div>
-     </div>
+    <div ui-view></div>
   </body> 
 </html>
