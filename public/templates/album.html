@@ -27,13 +27,14 @@
                </a>
              </span>
              <span ng-switch-default>
-               {{ $index + 1 }}
+              {{ $index + 1 }}
              </span>
-           </span>
+          </span>
          <td>
           <td class="col-md-9"> {{ song.name }} </td>
           <td class="col-md-2"> {{ song.length }} </td>
         </tr>
      </table>
-   </div>
- </div>
+  </div>
+  <ng-include src="'/templates/player_bar.html'"></ng-include>
+</div>
