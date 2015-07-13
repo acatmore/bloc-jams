@@ -157,8 +157,7 @@ td.song-number {
       vertical-align: middle; }
     .player-bar .volume .slider {
       display: inline-block;
-      width: 100px;
-      vertical-align: middle; }
+      width: 100px; }
 
 .player-bar-control-group {
   display: table-cell;
