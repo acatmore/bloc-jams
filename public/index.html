@@ -4,14 +4,17 @@
     <title> Bloc Jams</title>
 
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset-min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
      <script src="//cdnjs.cloudflare.com/ajax/libs/buzz/1.1.0/buzz.min.js"></script>
+     <script src="/javascripts/ui-bootstrap-tpls-0.13.0.min.js" ></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
      <script src="/javascripts/vendor.js"></script>
      <script src="/javascripts/app.js"></script>
      <script>
@@ -19,12 +22,62 @@
      </script>
   </head>
   <body >
-    <div class="container">
-      <div class='navbar-header'> <!-- Nav Bar -->
+<div class="container">
+      <div class='navbar-header'> 
         <a ui-sref='landing' class='logo navbar-left'>
           <img src="/images/blocjams.png">
         </a>
+      </div> 
+
+
+
+<!-- <div class="container">
+  <h2>Simple Collapsible</h2>
+  <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">Simple collapsible</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div> -->
+
+
+<!-- impliment this through the landing controller, not working -->
+      <div ng-controller="Landing.controller">
+        <button class="btn btn-default" ng-click="clickCollapsed()"> V </button>
+        <hr>
+        <div class="collapsed">
+          <div class="well well-lg"><button class="btn btn-default" > Collection </button>
+          <hr></div>
+        </div>
       </div>
+
+
+
+      <!-- dropdown idea 1 -->
+
+<!--   <div ng-controller="CollapseDemoCtrl">
+          <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
+          <hr>
+          <div collapse="isCollapsed">
+            <div class="well well-lg"><button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
+            <hr></div> 
+          </div>
+        </div> -->
+
+      <!-- dropdown idea 2 -->
+<!--       <div class="dropdown">
+        <button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+        V
+        <span class="caret"></span>
+        </button>
+        <ui class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+          <li role="presentation">
+            <a role="menuitem" tabindex="-1" href="#">Library</a>
+          </li> -->
+
+
+
       <ul class="nav navbar-nav navbar-right">
         <li><a ui-sref='collection'>Library</a></li>
       </ul>

@@ -260,10 +260,6 @@ var currentlyPlayingSong = null;
 });
 
 ;require.register("scripts/app", function(exports, require, module) {
- // require("./landing");
- // require('./collection');
- // require('./album');
- // require('./profile');
 
  //example album
  var albumPicasso = {
@@ -280,8 +276,14 @@ var currentlyPlayingSong = null;
       { name: 'Magenta', length: 375.92, audioUrl: '/music/placeholders/magenta' }
      ]
  };
+// angular.module('ui.bootstrap.demo', ['ui.bootstrap']);
+// angular.module('ui.bootstrap.demo').controller('CollapseDemoCtrl', function ($scope) {
+//   $scope.isCollapsed = false;
+// });
 
-blocJams = angular.module('BlocJams', ['ui.router']);
+
+
+blocJams = angular.module('BlocJams', ['ui.router','ui.bootstrap']);
 
 blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
@@ -314,13 +316,17 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
  
  // This is a cleaner way to call the controller than crowding it on the module definition.
  blocJams.controller('Landing.controller', ['$scope', function($scope) {
-
+    $scope.isCollapsed = false;
+    $scope.clickCollapsed = function() {
+      console.log("clicked");
+      // $scope.isCollapsed = !$scope.isCollapsed;
+      $('.collapsed').collapse('toggle');
+    }
     $scope.subText = "Turn the music up!";
  
    $scope.subTextClicked = function() {
      $scope.subText += '!';
    };
-
    $scope.albumURLs = [
      '/images/album-placeholders/album-1.jpg',
      '/images/album-placeholders/album-2.jpg',
@@ -516,7 +522,7 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
        // For now, we're supplying arbitrary initial and max values.
        scope.value = 0;
        scope.max = 100;
-      var $seekBar = $(element);
+      var $seekBar = angular.element(element);
       attributes.$observe('value', function(newValue) {
         scope.value = numberFromValue(newValue, 0);
       });
@@ -541,6 +547,7 @@ blocJams.config(['$stateProvider', '$locationProvider', function($stateProvider,
          return {left: percentString()};
        }
       scope.onClickSlider = function(event) {
+        console.log("problem")
          var percent = calculateSliderPercentFromMouseEvent($seekBar, event);
          scope.value = percent * scope.max;
          notifyCallback(scope.value);
