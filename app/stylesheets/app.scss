@@ -5,6 +5,9 @@
 @import "_buttons";
 @import "_profile";
 
+
+
+
 html {
   height: 100%;
 }
@@ -30,6 +33,7 @@ body.landing .navbar {
     a {
       line-height: 45px;
       color: white;
+      background-color: purple;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: 1.2;
@@ -41,7 +45,10 @@ body.landing .navbar {
   }
   
 .player-header-nav {
-  background-color: rgba(123, 70, 163, .9);
+  background-color: purple;
 }
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 /*# sourceMappingURL=app.css.map*/
+
+
+@import "_mobile";

@@ -21,7 +21,7 @@
        </div>
        <h3 class='artist-name'>{{ songPlayer.currentAlbum.artist }} </h3>
      </div>
-     <div class=' hidden-sm-block right-controls player-bar-control-group'>
+     <div class=' hidden-sm right-controls player-bar-control-group'>
        <div class='volume' >
          <i class='fa' ng-class='volumeClass()'></i>
          <slider value='{{songPlayer.volume}}' max='100' on-change='songPlayer.setVolume(value)'></slider>

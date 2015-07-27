@@ -8,6 +8,8 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+    
+        <!-- media="screen and (max-width: 768px)"  may need to be inserted above -->
 
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
@@ -27,6 +29,20 @@
         <a ui-sref='landing' class='logo navbar-left'>
           <img src="/images/blocjams.png">
         </a>
+        <!-- impliment this through the landing controller-->
+      <div ng-controller="Landing.controller">
+        <button class="btn btn-default" ng-click="clickCollapsed()"> V </button>
+        <hr>
+        <div class="collapsed">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref='collection'>Library</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a ui-sref='profile'>Profile</a></li>
+            </ul>
+          <hr></div>
+        </div>
+      </div>
       </div> 
 
 
@@ -42,15 +58,7 @@
 </div> -->
 
 
-<!-- impliment this through the landing controller, not working -->
-      <div ng-controller="Landing.controller">
-        <button class="btn btn-default" ng-click="clickCollapsed()"> V </button>
-        <hr>
-        <div class="collapsed">
-          <div class="well well-lg"><button class="btn btn-default" > Collection </button>
-          <hr></div>
-        </div>
-      </div>
+
 
 
 
@@ -78,9 +86,7 @@
 
 
 
-      <ul class="nav navbar-nav navbar-right">
-        <li><a ui-sref='collection'>Library</a></li>
-      </ul>
+      
     </div>
     <div ui-view></div>
   </body> 

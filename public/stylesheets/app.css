@@ -326,6 +326,7 @@ body.landing .navbar {
 .navbar-nav a {
   line-height: 45px;
   color: white;
+  background-color: purple;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1.2; }
@@ -333,11 +334,46 @@ body.landing .navbar {
     color: rgba(123, 70, 163, 0.9); }
 
 .player-header-nav {
-  background-color: rgba(123, 70, 163, 0.9); }
+  background-color: purple; }
 
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer; }
 
 /*# sourceMappingURL=app.css.map*/
+@media screen and (max-width: 768px) {
+  /* Landing Page and Global Styles */
+  /* Player bar */
+  /* Collection View */
+  .player-header-nav.navbar .navbar-nav li {
+    text-align: center; }
+  .player-header-nav.navbar .hero-content h1, .player-header-nav.navbar .hero-content h3 {
+    text-align: center; }
+  .player-header-nav.navbar .selling-points {
+    padding: 0; }
+    .player-header-nav.navbar .selling-points .point {
+      padding: 3em 0.75em; }
+      .player-header-nav.navbar .selling-points .point h5 {
+        height: 2.25em; }
+      .player-header-nav.navbar .selling-points .point p {
+        text-align: center;
+        font-size: 1.25em; }
+  .player-header-nav.navbar .landing-album-list {
+    /* Example class added to style the album covers for mobile */ }
+    .player-header-nav.navbar .landing-album-list .album-cover {
+      position: relative;
+      left: calc(50% - 200px); }
+  .player-bar {
+    height: 100px; }
+    .player-bar .left-controls {
+      position: fixed; }
+    .player-bar .right-controls {
+      display: none; }
+  .collection-album-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    /* Width of the album image. */ } }
+
 
 /*# sourceMappingURL=app.css.map*/
