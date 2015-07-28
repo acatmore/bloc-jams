@@ -1,5 +1,5 @@
   
-  <div class='hero-content'>
+  <div class='hero-content animated bounce'>
       <div class='container'>
         <h1> Bloc Jams </h1>
         <h3 ng_click="subTextClicked()"> {{ subText }} </h3>
@@ -23,15 +23,13 @@
       </div>
     </div>
   <div class='nav-bar'>
-  </div>
-
-  <div class='hero-content'>
   </div>  
 
-     <div class="landing-album-list container">
+     <div class="landing-album-list-container">
        <div class="row">
-         <div class="col-md-4" ng-repeat="albumURL in albumURLs">
-           <img ng-src="{{albumURL}}">
+         <div class="col-md-4 card" ng-repeat="albumURL in albumURLs">
+           <div class="side"></div><img ng-src="{{albumURL}}">
+           <div class="side back">The colors</div>
          </div>
        </div>
      </div>

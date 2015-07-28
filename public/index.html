@@ -3,11 +3,14 @@
   <head>
     <title> Bloc Jams</title>
 
+    <link rel="stylesheet" href="animate.min.css">
+    <link rel="stylehseet" href="stylesheets/animations.css">
     <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.17.1/build/cssreset-min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800,600,700,300' rel='stylesheet' type='text/css'>
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+
     
         <!-- media="screen and (max-width: 768px)"  may need to be inserted above -->
 
@@ -22,6 +25,18 @@
      <script>
        require('scripts/app');
      </script>
+     <script>
+            $(window).scroll(function() {
+              $('selling-points container').each(function() {
+                var = imagePos = $(this).offset().top;
+
+                var topOfWindow = $(window).scrollTop();
+                      if (imagePos < topOfWindow+400) {
+                        $(this).addclass("slideup");
+                      }
+              });
+            });
+    </script>
   </head>
   <body >
 <div class="container">

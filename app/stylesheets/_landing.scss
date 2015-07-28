@@ -12,6 +12,7 @@
  
   .selling-points {
     padding: 100px 0;
+    visibility: hidden;
  
   .point h5 {
     font-size: 24px;
@@ -19,8 +20,36 @@
     margin-bottom: 20px;
     text-align: center;
     height: 85px;
+
   }
   .point p {
     font-size: 14px;
   }
+}
+
+.col-md-4 {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+
+.col-md-4:hover {
+  transform: rotateY(180deg);
+}
+.col-md-4 .side{
+  -webkit-backface-visibility: hidden;
+  border-radius: 6px;
+  height:100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.col-md-4 .back {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
 }
