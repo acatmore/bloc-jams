@@ -1,4 +1,1 @@
-this is the first line of text
-this is the second line of text
-this is the third line of text
-this is the fourth line of text
+This is a music player app that allows users to upload their own music and listen to it online anywhere. It has most of the functionality of similar apps like itunes and spotify. It is mobile ready.
