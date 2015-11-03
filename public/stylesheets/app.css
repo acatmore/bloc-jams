@@ -4409,8 +4409,7 @@ stretchRight
     font-weight: 300; }
 
 .selling-points {
-  padding: 100px 0;
-  visibility: hidden; }
+  padding: 100px 0; }
   .selling-points .point h5 {
     font-size: 24px;
     font-weight: bold;
@@ -4419,31 +4418,6 @@ stretchRight
     height: 85px; }
   .selling-points .point p {
     font-size: 14px; }
-
-.col-md-4 {
-  height: 100%;
-  position: absolute;
-  transform-style: preserve-3d;
-  transition: all 1s ease-in-out;
-  width: 100%; }
-
-.col-md-4:hover {
-  transform: rotateY(180deg); }
-
-.col-md-4 .side {
-  -webkit-backface-visibility: hidden;
-  border-radius: 6px;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  width: 100%; }
-
-.col-md-4 .back {
-  background: #eaeaed;
-  color: #0087cc;
-  line-height: 150px;
-  text-align: center;
-  transform: rotateY(180deg); }
 
 .album-header-container {
   margin-top: 55px;
@@ -4753,8 +4727,6 @@ body.landing .navbar {
 .navbar-nav a {
   line-height: 45px;
   color: white;
-  text-align: center;
-  background-color: purple;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1.2; }
@@ -4762,51 +4734,11 @@ body.landing .navbar {
     color: rgba(123, 70, 163, 0.9); }
 
 .player-header-nav {
-  background-color: purple;
-  text-align: right; }
+  background-color: rgba(123, 70, 163, 0.9); }
 
 .nav, .pagination, .carousel, .panel-title a {
   cursor: pointer; }
 
 /*# sourceMappingURL=app.css.map*/
-@media screen and (max-width: 768px) {
-  /* Landing Page and Global Styles */
-  /* Player bar */
-  /* Collection View */
-  .player-header-nav.navbar .navbar-nav li {
-    text-align: center; }
-  .player-header-nav.navbar .hero-content h1, .player-header-nav.navbar .hero-content h3 {
-    text-align: center; }
-  .player-header-nav.navbar .selling-points {
-    padding: 0; }
-    .player-header-nav.navbar .selling-points .point {
-      padding: 3em 0.75em; }
-      .player-header-nav.navbar .selling-points .point h5 {
-        height: 2.25em; }
-      .player-header-nav.navbar .selling-points .point p {
-        text-align: center;
-        font-size: 1.25em; }
-  .player-header-nav.navbar .landing-album-list {
-    /* Example class added to style the album covers for mobile */ }
-    .player-header-nav.navbar .landing-album-list .album-cover {
-      position: relative;
-      left: calc(50% - 200px); }
-  .player-bar {
-    height: 100px; }
-    .player-bar .left-controls {
-      width: 100%; }
-    .player-bar .currently-playing {
-      width: 100%; }
-    .player-bar .right-controls {
-      display: none; }
-  .player-bar-control-group {
-    display: block; }
-  .collection-album-container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 280px;
-    /* Width of the album image. */ } }
-
 
 /*# sourceMappingURL=app.css.map*/

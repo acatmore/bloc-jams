@@ -1,10 +1,6 @@
-// <meta name="viewport" content="width=device-width" />
-
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 
-     .hero-content h1 {
-  }
   /* Landing Page and Global Styles */
   .player-header-nav.navbar {
     .navbar-nav {
@@ -37,34 +33,24 @@
         left: calc(50%  - 200px);
       }
     }
-  }
 
-  /* Player bar */
-      .player-bar {
-
+    .player-bar .container {
+      // display:none;
       height: 100px;
-      // background: rgb(204, 51, 255, .3);
+      background: rgb(204, 51, 255, 0.3);
         .left-controls {
-         width: 100%;
-        }
-        .currently-playing {
-          width: 100%;
-        }
-        .play-controls {
-      //this doesnt work
+          width: 50%;
+          text-align: middle;
         }
         .right-controls {
-          display: none;
-        }
 
+        }
         // .player-bar-cotrol-group {
         //   display: none;
 
         // }
     }
-    .player-bar-control-group {
-        display:block;
-    }
+  }
 
   /* Collection View */
 

@@ -4,11 +4,6 @@
 @import "_player_bar";
 @import "_buttons";
 @import "_profile";
-// @import "animate";
-// @import "animation";
-
-
-
 
 html {
   height: 100%;
@@ -21,7 +16,6 @@ body {
   background: -webkit-radial-gradient(  #2b1339, #380c77);
   background: radial-gradient(   #2b1339, #380c77);
   padding-bottom: 150px;
-  
 }
 
 body.landing {
@@ -36,8 +30,6 @@ body.landing .navbar {
     a {
       line-height: 45px;
       color: white;
-      text-align: center;
-      background-color: purple;
       text-transform: uppercase;
       font-weight: 700;
       letter-spacing: 1.2;
@@ -49,11 +41,7 @@ body.landing .navbar {
   }
   
 .player-header-nav {
-  background-color: purple;
-  text-align: right;
+  background-color: rgba(123, 70, 163, .9);
 }
 .nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
 /*# sourceMappingURL=app.css.map*/
-
-
-@import "_mobile";
